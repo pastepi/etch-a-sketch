@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(3,114,157,1) 2%, rgba(138,28,162,1) 83%);
+}
+
+:root {
+    --cont-size: 640px;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header__div {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__div--left,
+.main__div--right {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__container__div {
+    box-sizing: content-box;
+    display: grid;
+    gap: 0px;
+    width: var(--cont-size);
+    height: var(--cont-size);
+    border: 20px inset grey;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 -1em 3em rgba(0,0,0,0.2), 0.3em 0.3em 1em rgba(0,0,0,0.2);
+
+}
+
+.tile {
+    border-collapse: collapse;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-top: 2.5rem;
+    width: 25vw;
+    height: 1.2rem;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(#8d00c5, #8d00c5);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 2px 2px 0 black;
+}
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 2px solid rgb(119, 0, 129);
+    border-radius: 20%;
+    background: #bf1dff;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0 rgb(0, 71, 99);
+    transition: .3s ease-in-out;
+}
+  
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.container__input {
+    width: var(--cont-size);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-left: 3rem;
+}
+
+.input--range {
+    margin-bottom: 2rem;
+}
+
+.range__output {
+    width: 2rem;
+    margin-bottom: 1.3rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-shadow: 3px 2px black;
+}
+
+.btn__cont {
+    height: 5vh;
+    width: 5vw;
+}
+
+button {
+    width: 5rem;
+    height: 5rem;
+    border: 2px outset grey;
+    border-radius: 15%;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    background-color: rgb(88, 88, 88);
+    box-shadow: 0 -1em 1em rgba(0,0,0,0.2), 0.3em 0.3em 1em rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: rgb(65, 65, 65);;
+}
+
+button:active, 
+.buttontoggled {
+    color: rgb(151, 151, 151);
+    font-size: 1rem;
+    border: 2px outset rgb(109, 109, 109);
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateX(0.25rem) translateY(0.25rem);
+}
