@@ -133,7 +133,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(65, 65, 65);;
+    background-color: rgb(65, 65, 65);
 }
 
 button:active, 
@@ -141,6 +141,7 @@ button:active,
     color: rgb(151, 151, 151);
     font-size: 1rem;
     border: 2px outset rgb(109, 109, 109);
+    background-color: rgb(59, 59, 59);
     width: 4.5rem;
     height: 4.5rem;
     transform: translateX(0.25rem) translateY(0.25rem);
